@@ -64,6 +64,7 @@ Inline always open version
 | name                  | String       |             | Input name property                      |
 | id                    | String       |             | Input id                                 |
 | format                | String       | dd MMM yyyy | Date formatting string                   |
+| inputLabel            | String       |             | Caption shown instead of selected date   |
 | language              | String       | en          | Translation for days and months          |
 | disabled              | Object       |             | See below for configuration              |
 | placeholder           | String       |             | Input placeholder text                   |
