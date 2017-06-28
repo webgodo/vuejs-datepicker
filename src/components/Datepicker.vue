@@ -8,7 +8,7 @@
         :name="name"
         :id="id"
         @click="showCalendar"
-        :value="formattedValue"
+        :value="inputLabel || formattedValue"
         :placeholder="placeholder"
         :clear-button="clearButton"
         :disabled="disabledPicker"
@@ -84,6 +84,10 @@ import DateLanguages from '@/utils/DateLanguages.js'
 
 export default {
   props: {
+    inputLabel: {
+      type: String,
+      default: ''
+    },
     value: {
       validator: function (val) {
         return val === null || val instanceof Date || typeof val === 'string'
